@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Youssef ❤️ Batoota</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#6fb6ff,#ff9fd6);color:white;overflow-x:hidden}
+.container{max-width:900px;margin:40px auto;padding:30px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border-radius:20px}
+h1{font-size:3em;text-align:center}
+.type{border-right:2px solid #fff;white-space:nowrap;overflow:hidden;width:0;animation:typing 4s steps(30,end) forwards,blink .7s infinite}
+@keyframes typing{to{width:100%}}@keyframes blink{50%{border-color:transparent}}
+button{padding:14px 24px;border:none;border-radius:10px;font-size:18px;background:#fff;color:#e91e63;cursor:pointer}
+#secret{display:none;margin-top:20px;font-size:1.2em}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:25px}
+.photos div{height:180px;border:2px dashed #fff;border-radius:12px;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Youssef ❤️ Batoota</h1>
+<h2 class="type">Every day with you is my favorite day.</h2>
+<p>Dear Batoota,<br><br>
+From the moment you came into my life, everything became brighter.
+Thank you for your smile, your kindness, and every memory we've made together.
+No matter what happens, I'll always treasure you and every moment we share.
+I love you. ❤️<br><br>— Youssef
+</p>
+<h2>⏳ Together Since 23 October</h2>
+<p id="counter"></p>
+<button onclick="document.getElementById('secret').style.display='block'">Open My Heart ❤️</button>
+<div id="secret">You're my favorite person, my peace, and my greatest blessing. I can't wait to make many more memories with you. 💙🌸</div>
+<h2>📸 Our Memories</h2>
+<div class="photos">
+<div>Add Photo 1</div><div>Add Photo 2</div><div>Add Photo 3</div>
+</div>
+</div>
+<script>
+const start=new Date("2025-10-23T00:00:00");
+function update(){
+const now=new Date();
+let diff=Math.abs(now-start);
+let d=Math.floor(diff/86400000);
+document.getElementById("counter").textContent=d+" days together ❤️";
+}
+update();setInterval(update,60000);
+</script>
+</body></html>
